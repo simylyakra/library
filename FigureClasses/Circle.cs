@@ -2,7 +2,7 @@
 
 namespace FigureClasses
 {
-    public class Circle : Figure
+    public class Circle : IFigure
     {
         public double Radius { get; }
         public Circle(double radius)
@@ -10,6 +10,6 @@ namespace FigureClasses
             Radius = radius;
         }
 
-        public override double Area() => Math.PI * Radius * Radius;
+        public double Area() => Math.PI * Radius * Radius;
     }
 }

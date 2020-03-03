@@ -1,7 +1,7 @@
 ﻿using System;
 namespace FigureClasses
 {
-    public abstract class Figure
+    public interface IFigure
     {
         public abstract double Area();
     }

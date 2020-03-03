@@ -1,7 +1,6 @@
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\bin\Debug\netcoreapp3.1\FigureClasses.deps.json
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\bin\Debug\netcoreapp3.1\FigureClasses.dll
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\bin\Debug\netcoreapp3.1\FigureClasses.pdb
-C:\Users\alexb\source\repos\FigureClasses\FigureClasses\obj\Debug\netcoreapp3.1\FigureClasses.csprojAssemblyReference.cache
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\obj\Debug\netcoreapp3.1\FigureClasses.AssemblyInfoInputs.cache
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\obj\Debug\netcoreapp3.1\FigureClasses.AssemblyInfo.cs
 C:\Users\alexb\source\repos\FigureClasses\FigureClasses\obj\Debug\netcoreapp3.1\FigureClasses.dll

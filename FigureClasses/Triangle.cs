@@ -2,34 +2,32 @@
 
 namespace FigureClasses
 {
-    public class Triangle : Figure
+    public class Triangle : ITriangle
     {
         public double SideOne { get; }
+
         public double SideSecond { get; }
-        public double SideЕThird { get; }
 
-        public bool IsRectangular { get; }
+        public double SideThird { get; }
 
-        public Triangle(double side1, double side2, double side3)
+        private Triangle(double side1, double side2, double side3)
         {
-            var sides = new double[] { side1, side2, side3 };
-            Array.Sort(sides);
-            SideOne = sides[0];
-            SideSecond = sides[1];
-            SideЕThird = sides[2];
-            // Pythagorean inverse theorem
-            IsRectangular = (SideЕThird * SideЕThird == SideSecond * SideSecond + SideOne * SideOne);
+            SideOne = side1;
+            SideSecond = side2;
+            SideThird = side3;
         }
-        public override double Area()
+        public double Area()
         {
-            if (IsRectangular)
-            {
-                return (SideOne * SideSecond) / 2;
-            }
-
-            var halfPerimeter = (SideOne + SideSecond + SideЕThird) / 2;
+            var halfPerimeter = (SideOne + SideSecond + SideThird) / 2;
             return Math.Sqrt(
-                halfPerimeter * (halfPerimeter - SideOne) * (halfPerimeter - SideSecond) * (halfPerimeter - SideЕThird));
+                halfPerimeter * (halfPerimeter - SideOne) * (halfPerimeter - SideSecond) * (halfPerimeter - SideThird));
+        }
+
+        public static ITriangle CreateTriangle(double side1, double side2, double side3)
+        {
+            var triangle = RectangularTriangle.CreateTriangle(side1, side2, side3) 
+                ?? new Triangle(side1, side2, side3);
+            return triangle;
         }
     }
 }
